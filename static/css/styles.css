@@ -1,0 +1,113 @@
+/* static/css/styles.css */
+
+/* Overall Page Styling */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.855),rgb(139, 139, 208),rgba(122, 215, 196, 0.844));   
+    color: #444;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the Weather App */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #3b5998;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Field Focus Effect */
+input[type="text"]:focus {
+    border-color: #3b5998;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover and Active Effects */
+button:hover {
+    background-color: #2d4373;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1a2e54;
+}
+
+/* Weather Information Section */
+.weather-info {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #ffb6b9, #fae3d9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Weather Information Title */
+.weather-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Weather Information Details */
+.weather-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Weather Icon */
+.weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
